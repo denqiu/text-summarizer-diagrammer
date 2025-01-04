@@ -59,8 +59,8 @@ async function main() {
     const summarizer = new TextSummarizer();
     await summarizer.connect();
 
-	const sampleText = "Frontend development refers to the process of creating the user interface and user experience for a web or mobile application. It involves using HTML, CSS, and JavaScript to design and build the visual elements, interactive components, and overall look and feel of the application. Frontend developers typically work closely with designers and backend developers to ensure that the application functions correctly and seamlessly. On the other hand, backend development focuses on the server-side logic and data management of an application. It involves using programming languages such as Python, Java, or Node.js to create APIs, databases, and other backend components that support the frontend application. Backend developers typically work closely with frontend developers to ensure that the application functions correctly and seamlessly.";
-	
+	const sampleText = "In this example, we will use Python to summarize text using a text summarization library or algorithm. We will then use Gradio, a Python library for creating interactive web applications, to create a web interface that allows users to input text and receive a summary. Finally, we will use Mermaid, a lightweight markup language for creating diagrams and flowcharts, to convert the summary into a diagram.";
+		
 	try {
         const summary = await summarizer.summarizeAndVisualize(sampleText, 'mermaid-output');
         console.log("Summary:", summary);
