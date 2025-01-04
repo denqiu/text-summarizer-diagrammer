@@ -59,9 +59,9 @@ async function main() {
     const summarizer = new TextSummarizer();
     await summarizer.connect();
 
-    const sampleText = "Artificial Intelligence (AI) is a broad field of computer science focused on creating intelligent machines that can perform tasks that typically require human intelligence.";
-    
-    try {
+	const sampleText = "Frontend development refers to the process of creating the user interface and user experience for a web or mobile application. It involves using HTML, CSS, and JavaScript to design and build the visual elements, interactive components, and overall look and feel of the application. Frontend developers typically work closely with designers and backend developers to ensure that the application functions correctly and seamlessly. On the other hand, backend development focuses on the server-side logic and data management of an application. It involves using programming languages such as Python, Java, or Node.js to create APIs, databases, and other backend components that support the frontend application. Backend developers typically work closely with frontend developers to ensure that the application functions correctly and seamlessly.";
+	
+	try {
         const summary = await summarizer.summarizeAndVisualize(sampleText, 'mermaid-output');
         console.log("Summary:", summary);
     } catch (error) {
