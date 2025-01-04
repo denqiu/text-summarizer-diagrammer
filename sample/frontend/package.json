@@ -1,0 +1,12 @@
+{
+    "name": "text-summarizer",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+      "start": "node gradio.js"
+    },
+    "dependencies": { // change latest to specific version
+      "@gradio/client": "latest",
+      "mermaid": "latest"
+    }
+  }
